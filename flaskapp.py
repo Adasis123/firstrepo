@@ -14,7 +14,7 @@ def get_data():
         text = data
     return text
 
-x = 5
+x = 6
 @app.route("/")
 def main():
     return render_template('index.html', mongo=get_data()['title'])
